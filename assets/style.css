@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;600;700;800&family=Noto+Serif+SC:wght@500;700;900&display=swap');
+
+:root { --ink:#1b2522; --muted:#66736e; --paper:#f3f1eb; --line:#d3d7cf; --accent:#db5a3f; --olive:#b6c3a7; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; background:var(--paper); color:var(--ink); font-family:Manrope,"PingFang SC","Microsoft YaHei",sans-serif; line-height:1.65; }
+a { color:inherit; text-decoration:none; }
+.site-header,.site-footer { max-width:1180px; margin:auto; padding:28px 32px; display:flex; justify-content:space-between; align-items:center; }
+.site-header { border-bottom:1px solid var(--line); }
+.brand { font:700 18px/1 "DM Mono",monospace; letter-spacing:.04em; }
+.brand span { color:var(--accent); font-weight:400; }
+nav { display:flex; gap:28px; color:var(--muted); font-size:13px; }
+nav a:hover,.site-footer a:hover { color:var(--accent); }
+main { max-width:1180px; margin:auto; padding:0 32px; }
+.hero { padding:112px 0 92px; max-width:850px; }
+.eyebrow,.note-meta { margin:0 0 18px; color:var(--accent); font:500 11px/1.2 "DM Mono",monospace; letter-spacing:.16em; }
+h1,h2,h3,p { margin-top:0; }
+h1 { margin-bottom:30px; font:900 clamp(44px,7vw,92px)/1.08 "Noto Serif SC",serif; letter-spacing:0; }
+h1 em { color:var(--accent); font-style:normal; }
+.intro { max-width:600px; color:var(--muted); font-size:17px; }
+.primary-link { display:inline-flex; gap:20px; align-items:center; margin-top:28px; padding:13px 0; border-bottom:1px solid var(--ink); font-weight:700; }
+.primary-link span { color:var(--accent); font-size:20px; }
+.signal-bar { border-top:1px solid var(--line); border-bottom:1px solid var(--line); display:flex; gap:0; margin-bottom:120px; }
+.signal-bar div { flex:1; padding:22px 0; display:flex; gap:14px; align-items:baseline; border-right:1px solid var(--line); }
+.signal-bar div:not(:first-child) { padding-left:28px; }
+.signal-bar div:last-child { border:0; }
+.signal-bar strong { font:700 22px "DM Mono",monospace; }.signal-bar span { color:var(--muted); font-size:12px; }
+.section-block { padding-bottom:120px; }.section-heading { display:flex; justify-content:space-between; align-items:end; border-bottom:1px solid var(--line); margin-bottom:42px; }.section-heading h2,.about-section h2 { font:700 36px/1.2 "Noto Serif SC",serif; margin:0 0 20px; }
+.notes-grid { display:grid; grid-template-columns:1.35fr 1fr 1fr; gap:0; border-bottom:1px solid var(--line); }.note-item { padding:0 28px 32px; border-left:1px solid var(--line); }.note-item:first-child { padding-left:0; border-left:0; }.note-item h3 { font:700 23px/1.35 "Noto Serif SC",serif; margin-bottom:14px; }.note-item p:not(.note-meta) { color:var(--muted); font-size:14px; min-height:72px; }.note-item a { display:inline-flex; gap:12px; margin-top:18px; font-size:13px; font-weight:700; }.note-item a span { color:var(--accent); }.featured h3 { font-size:30px; }
+.gallery-grid { display:grid; grid-template-columns:1.2fr 1fr 1fr; gap:14px; }.gallery-placeholder { margin:0; min-height:260px; padding:22px; background:#dce3d4; display:flex; flex-direction:column; justify-content:space-between; }.gallery-placeholder.warm { background:#d9b89e; }.gallery-placeholder.dark { background:#34403b; color:#f3f1eb; }.placeholder-mark { font:500 42px "DM Mono",monospace; opacity:.7; }.gallery-placeholder figcaption { font:11px "DM Mono",monospace; letter-spacing:.05em; }
+.about-section { display:grid; grid-template-columns:1fr 1fr; gap:80px; padding:0 0 110px; }.about-section p { color:var(--muted); max-width:430px; margin-top:7px; }.about-section code { color:var(--accent); }
+.site-footer { border-top:1px solid var(--line); color:var(--muted); font:11px "DM Mono",monospace; letter-spacing:.05em; }.site-footer a { color:var(--ink); }
+@media (max-width:700px) { .site-header, .site-footer, main { padding-left:20px; padding-right:20px; }.hero { padding:72px 0 64px; }.signal-bar { margin-bottom:76px; }.signal-bar div,.signal-bar div:not(:first-child) { display:block; padding:16px 10px 16px 0; }.signal-bar strong { display:block; margin-bottom:4px; }.section-block { padding-bottom:76px; }.section-heading { display:block; }.notes-grid,.gallery-grid,.about-section { display:block; }.note-item,.note-item:first-child { padding:28px 0; border-left:0; border-top:1px solid var(--line); }.gallery-placeholder { min-height:180px; margin-bottom:12px; }.about-section { padding-bottom:76px; }.about-section h2 { margin-bottom:26px; } nav { gap:14px; } }
+
